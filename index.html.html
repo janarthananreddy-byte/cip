@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cipca Health — Your Complete Healthcare Platform</title>
+<title>CIPACA — Saving Lives · 24x7 Emergency &amp; ICU Services</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -11,9 +11,11 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --blue-50:#EFF6FF;--blue-100:#DBEAFE;--blue-200:#BFDBFE;--blue-300:#93C5FD;
-  --blue-400:#60A5FA;--blue-500:#3B82F6;--blue-600:#2563EB;--blue-700:#1D4ED8;
-  --blue-800:#1E40AF;--blue-900:#1E3A8A;
+  --blue-50:#EEF2FF;--blue-100:#E0E7FF;--blue-200:#C7D2FE;--blue-300:#A5B4FC;
+  --blue-400:#818CF8;--blue-500:#3B5EDB;--blue-600:#1A3A8F;--blue-700:#152D72;
+  --blue-800:#0F2057;--blue-900:#0B1640;
+  --red-accent:#C0392B;--red-light:#FDECEA;--red-mid:#E74C3C;--red-200:#FECACA;
+  --ecg-red:#D94040;
   --teal-50:#F0FDFA;--teal-100:#CCFBF1;--teal-200:#99F6E4;
   --teal-500:#14B8A6;--teal-600:#0D9488;--teal-700:#0F766E;
   --green-100:#DCFCE7;--green-600:#16A34A;--green-800:#166534;
@@ -78,7 +80,7 @@ body{font-family:var(--font-body);font-size:16px;color:var(--gray-800);backgroun
 .btn-icon{width:36px;height:36px;padding:0;border-radius:var(--radius-sm)}
 
 /* ─── NAV ─── */
-nav{background:var(--blue-900);position:sticky;top:0;z-index:100;border-bottom:1px solid rgba(255,255,255,.07)}
+nav{background:var(--blue-900);position:sticky;top:36px;z-index:100;border-bottom:1px solid rgba(255,255,255,.07)}
 .nav-inner{height:64px;display:flex;align-items:center;justify-content:space-between}
 .nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .nav-logo-mark{width:34px;height:34px;background:var(--blue-600);border-radius:9px;display:flex;align-items:center;justify-content:center}
@@ -306,14 +308,28 @@ footer{background:var(--gray-900);padding:64px 0 32px}
 <!-- ══════════════════════════════════════════════
      NAVIGATION
 ══════════════════════════════════════════════ -->
+<!-- EMERGENCY BAR -->
+<div style="background:var(--ecg-red);padding:8px 0;text-align:center;position:sticky;top:0;z-index:200">
+  <div style="display:flex;align-items:center;justify-content:center;gap:16px;font-family:var(--font-display)">
+    <span style="display:flex;align-items:center;gap:6px;color:#fff;font-size:13px;font-weight:600;letter-spacing:.02em">
+      <i class="ti ti-ambulance" style="font-size:16px"></i>
+      24x7 EMERGENCY &amp; ICU SERVICES
+    </span>
+    <span style="background:rgba(255,255,255,.2);height:16px;width:1px;display:inline-block"></span>
+    <a href="tel:108" style="display:flex;align-items:center;gap:5px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.3)">
+      <i class="ti ti-phone-call" style="font-size:14px"></i> Call 108 — Free Ambulance
+    </a>
+    <a href="tel:1800" style="display:flex;align-items:center;gap:5px;color:#fff;text-decoration:none;font-size:13px;font-weight:700;background:rgba(255,255,255,.15);padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.3)">
+      <i class="ti ti-phone" style="font-size:14px"></i> Helpline: 1800-CIPACA
+    </a>
+  </div>
+</div>
+
 <nav>
   <div class="container">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <div class="nav-logo-mark">
-          <i class="ti ti-heart-plus" style="color:#fff;font-size:18px"></i>
-        </div>
-        <span class="nav-logo-text">Cipca<span style="color:var(--blue-300)">Health</span></span>
+        <img src="data:image/png;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAEJAgwDASIAAhEBAxEB/8QAHQABAAICAwEBAAAAAAAAAAAAAAUGAwQCBwgBCf/EAE4QAAEDAwICBgYFCAcHAgcAAAEAAgMEBREGIRIxBxMiQVFhCBRxgZGhMnKxwdEVFiMzQlKC8DVikqKywuEXJDRjc5Pxo9IlNlaUlbPT/8QAGgEBAAIDAQAAAAAAAAAAAAAAAAQFAQIDBv/EADQRAAICAQIDBQUIAwEBAAAAAAABAgMRBCESMUEFE1FhcTKBkaHBFCIjM0JSsfAV0fHhsv/aAAwDAQACEQMRAD8A8ZIiIAiIgCK49Hegb3rG801stVvnrqyo7UVNFgFzRzc5xIDG8tyR7RkE+qdGeh5UGjhn1DqSlts5b26e30vWuaD+yZXEZPj2SPNSY6fZSslwp/H4HCV2+ILJ4lRe49Veh4H0r5LFquGrmazDILjRhoJ8OsaTwj+FeWuk7oy1Foi8vtt3tc1DVhvGIXOD2yM37UbwSHDuxknPnsj06azXLi/n4BXYeJrH8FBRdhdF3RdqTXF5bbrPapa+qDeOSEODGQs/ekeSA0c9s58MnZentNeh04UjH3rVtNSTOYOOGht4eAfAyOcOL+yi0ySzZLh/n4B3ZeILP8Hh9F7Q1x6H1ziopajTt+ob1KBkU1VTerSu8hIHOBPt4R5ry3rTQ1701e57TW2+ppq2B4ZNSzAdZGTjByNnNOcgjbHiN0lp9uKt8S+fwEbt8TWH/epU0Xb3Q70Iap6QZibRbhPBE4NqKyeTq6aAnuzze4eDQfZjc+irX6HEDaNouGtIo5yMllLaRwNPtL+17cBZ+zKP5klHy5v5GO/cvYjn+Dwui9YdJnolaotFG+ssUlJqSCMFzmUsIpaoDmSGEkPPlxE+AXmiu07X09f6sI3HtFrnObw9WRzDx+yR/pz2WstNJLig+JeX+jaN6ziSw/MhkXfnQ56Oertc00Nyp6OKktjycXG4ZbE/HPq4xlzx3ZxjI5hd3M9Dak9TAdraL1gN2xZW9WD4Y63OFs9NGO1k0n4c/wCDXv3L2Itr4HhVF6H6X/Rp1boylnuZpIrla4mlz662j9U3xkiO7QOZIyB3uXQFfRz0U/VTgZxkEHIcPELnZRKC4k8rxRvC1SeOT8DXREXE6hERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAW/YqVtVcWNkbxRRgySDxA7vecD3rQUzpH+kJifoiE59nE1dtNBTtjF8snK+TjXJo/R/wBFzo9pNDdGlNdZ4Gvvd4gbWVkpHaaxw4mRDwAByfFxPksnR9qfUd+1i2tnZVyUbpnxPjja7qYmOYS0eGWlo3O/b812hY3wy2Shkp+EwPpozHjlwloxj3LqOw10vR/0k1dprHFlqrZcgnk1rierk92eE+w+Cj6qyU7OOT6lr2ZVDubIRjmWNvr7zuhdCem6+0noyoKOpt4q7vV3KOG1uaO3E7m8jvILRw8PeXN8Au+uJvHwcQ4sZxnfHivPnpaHq9cdFNRUkChZfh1vENgeshO/uBUzRfnxKjU/lMeiZftM2HoOnrHUTqSqpLk+nurmN4pJZiRwOPeBwuaAO7BXZP8AtX0l+/Xf/bn8V5/6Jzx6O6UKiH/g5NTs6lw+if0jyce4tViuHq1LpWnoamxVNLcXVDpBVSgt42cLeWRv7OQ596jdo2ShqJJevxLzsbQU6jSxlPOc42x06nofT19tl+oGVltqWyNcMlhID2bkdpvMcu9eYvTlNJdNSadsNttbJ77HRz1k1QwfpG0zQ48B8R2JH78uHbmc2qy6w1FZ7FRPo7ZEaWg42x1ToHkODiS5jnZwRkjbxAUBrCqjd6VLa27cDYp9GTSR8X0cGmlLgP8A1Pmu/ZlubOLqk2QO2dC9PHH6ZPB3H6Olws9z6F9NVNkoYaCmFL1b4IuTZWEtkPiSXhzsnc53VW1DrvVdJqu4WypqYre1hfFE1sYLWHnG8ucCSDgZPLDjsFC+iVcKu0ejl65FSz1UzrjUMpImML+JznNaOXJvFnJ9qiNWQXiov9RU19NO6qqn8YbwdojJY3sjdueA4BAKjdoPgtlGL6lh2BRG2HFYljHXx8jv7Qldd7lpilrL3BFDVyZ/VnZ7c9l2BsMjfY47+/C8aekvUWWfp8uVzotPx1FssslIL4I8htS8uBdxY5EgiPI5lu69W9Drnx2qqooKptTboXsdTF5xLHxsDnNcOXDk5BHidhjC8vagdBHa/SCjuPAKx10pjGH8yPXXYx8lYdlPdy9F8WkUvbEFGxwXLLfyye0rPLRzWijmtzY20UkDHU7Y2hrRGWgtwByGMbKp9I2qq+1XK22CzRx/lC5ODRM/fqml3DkN7zz57DHIra6GhUDol0mKri678j0vFxc/1TcfJUvpXtlxGuLdWw3BsNTWyNp6RsZIdBG0dqRzu7dxO3Id6rtRmGUvEsezK4W2rj8M+/H9Z262MdQInnrRw8Li7fi7jlfn96ZHRdSaM1g6W004itN1jfWUUbRtBK39bEP6u4IH9Zo/ZXvu1Q09PbKaCkdxU8cTWxuzniaBsc9+eeV5t9P0wjTGlQeD1j16Yx8X7vVji92eHKmaN5lwPlJFXqkkuJc0zwEiIop3CIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAtu0VXqdfHM7PBu2QD907H8faAtRFmMnFproYaTWGfov6H/Srb9RaPpdF3WuiZerZGIqTjk/4ynA7BYT9JzRsQO4A+OO3de6QodV24RSuEFXFvBUBuS3xaR3tPh71+Uenb/WWeoikhllb1LuOJ8TyySF2c8TXDcb7/HGM5XovRXpc6ys9Cyluc1vvjGNDWvroHMnwBtl8eA4+ZBJ7yVKsrr1GZRaTfNPb4M50326WSaztya+p6Rs2lukCLUkT6mThfTtbGy4deCGsbgAeL2kc2OG/PY7qvenBd9MM6Oqay11U11/dVx1NBBEQZGAZD3vHNrC0uGe92MZwcdNao9MPV1wojBaY7RZ3kbzQwPmkHs6zLR7wV5z1bq256hr6isrKupqZ6kkz1NRIXyze0nPdtj3ctliimGlfHKWWuieTrrdZZrsR4MeeMf3+D3r6GtVo659FDtPRinqLtDVyVN0pKpjXOc8uHBIGnmwNDAD3EELuKl0dpyEVIktcFWKiodUuFU0TBr3cy3izj3L8rdG6yuumrhT1tDWVVLVUx/QVVNIWSxDw8x3YPdtuNl6Q0v6Ymp6KhEN4pbPeJGj9e6N9PIfrBvZJ9gC2tqhqJd5FrL6PY41X26ePd748j2EdHadNxbWfkyABtMaYU4aBB1ZOSOr+jzXmX05amwRX7TwtFwEeo6Snlp6inpjgx0rm9kPLfo83AN72vd3c6Rrr0utX3ehfSWd9vsTHsLXvpInSznI34Xv7LfaACO4hecdQairrtVyTvmm45JDLJK+QuklfnPE5x3Jzv7fHZbUKGll3jab8F9Wa32WapcDzjxf0P069HGTTh6GtP0+mK6OrpqelDJnYAe2c9qQPb+y7icdj3Y3IwV8l0hcoKugomyPqRJBVy1lcOyTUOOYXHfOWlx4fDteJX549GPSrqPRF09fst0mt1S7AlcwB0M4HISRnY8z3bZ2xzXoa0embco6Jjblp+zVc42dJDUSQB3nwuDiPiudunjc+OEk8+LwztptZPTLhcfllcsfU9UaGsL7bRw19bCae6TUcUFZGyQOjLowQHYG3ERzK8cekpLpWfp7rGW69vForn0ov76UF8ccjXASY4Th5DQHeTsjmobpS9KTWGqqKa30tZBZqCQFr4LY14lkBHJ0zjnHd2eH2Fefam71ctYyoY4RCL9WxvIe3xyuuncNH95vL8F/s4aqVmsllrHr/C8j9e7FLbZ7NRy2eWCW3GBnqr4HB0ZjAw3hI7sKtaw0pT6g1ZaKiobI+GBrnVDXHscDTszHi5xGfJq8AdEPT1qvQDOotNxZHSF3FJb6xjpqVzjzLQCHMJPPBHmSu8Y/TPeKdrZNJW50/Du5tzcG58cdWcDyyuM9Kp+xJNeqT9+TtRrJUSzhp/3wPXk0sNNTvmmkjhhiaXPe8hrWNA3JJ2AAX57emD0pU+t9ZSG0z9ZaLdG6ioHZ2mcT+lmA8DsAfBrT3qJ6XfSI1brykfQV9wjht7jvb7cx0UL8HbrHOJL+QO5IyOQXSFdVzVk5mndl2MADk0eAW/3dPF4eZPbbkv8A04/euaysRXzMCIihkkIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIssFNUT/qIJZfqMJ+xZ4rXcJPo0kg+sOH7VtGEpckauUVzZpopH8iXPg4/Vtvrtz8Mp+RLnwcfq22cY425+GcrfuLf2v4Gve1/uXxI5FuPtdwZzo5j9VufsWvPBPAQJoZIieQe0j7VpKEo80bKSfJmNERamwREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAWSCGWeQRwxukeeQaMrds9rluD+LPVwNOHPxzPgFbKKjp6OLq4Iw0d5O5d7T3qdpdBO/7z2RE1GrhTtzZA0WnJXYdVyhg72MOT8eX2qZpbVQU/wCrpmF37z+0fny92FurhNLHDGZJXtYwc3OOAFd16OilZx72VU9Vda8Z+BzO+M745Iq/W6kY0ltJDx4P03nAPu54+Ciai8XGfHFUuZjcdWA35jdcbO06YbR3OsNBbPeWxdeJvLiHxTIzjIVCfV1b88dTM7PPMhOUZWVbAAyqnaByxIQo/wDmF+z5/wDh2/xj/d8i/L4AASQMEjBwqVT3i4wk4qXPyd+s7XzO6laPUgLg2rg4QebozsPcfxUivtSme0tjjPQWx3juS1RbaGoH6SliPmBwn4jBUXWabhcM0sz2Ox9F+4J9vcPipunmiqIWywva9juRCyKRPS0XLPCvccY6i6p4yUa426poC3rw0teSGuacg4/8rTU7rCYuq4YAchjC4jwJP4Bqgl5rUQjXbKMeSLymUp1qUubCIi4nUIiIAiIgCIiAIiIAi5RsfJI2ONjnvcQ1rWjJJPIAKS1Dp+9afnihvNuno3yt44+sGzh5EbZGdx3d6ZMqLazjYi0WdlHVvon1rKWd1LG4MfMIyWNceQLuQPktuxWG8X2SaOz26orXwM6yQRNzwj8fAcymQotvCRGouUjHxvdHI1zHtJDmuGCCO4ridkMBFJVNhvNNZoLzUW2pjt9QcRVDmHgd7+7Pdnn3KNQy01zCIrza9P2+boYu2oZYP9+guTI4pcnZnYBb7O2T7gsN4N663Y2l0TfwKMiIsnMIitF6sVHSdHen79D1nrVdPUxzkuy3DHAMAHdyPxWG8G0YOSbXT/hV0RFk1CIuw+mjT1BYfzc9Rpo6czWxjZw1uC+RuOJ7vM8XyWG8PB0jU5QlNdPqdeIiLJzCIr/bdO0EvQfc9QPpQ6vjuTWxzYOWsHVt4fZl5+XgsN4OldTszjom/gUBERZOYRFfOg7T1t1JrOSiutOKimjo5JTGXEZPE1o5eHHn3LEnwrJ0qrds1CPNlDRZKmIwVMsJ5xvLfgcLGsnMIiIAiIgCIiAIiIAiIgCIiAKRsdtdXz5eCIGHtnOM+Q/nb4LTpYJKmojgiGXvOB4DzPkr1RU8dLTMgiHZYMAkbnzPmVO0Gl7+eZckRNXqO5htzZzijZFG2ONoa1owAByXNE+a9MkksIoW23lmGtqYqSmfPK7DWj3k9wHmqZc7hPXy8Uh4YwexGOTfxPmtjUdf65WdVG7MMJIbg7OPe78PIBRa83rtY7pcMfZXzLzSaZVR4nzYREVeTQiIgCIiA27XXzUE4fGSWEjrGdzhn5HzV67z5FddLsGI5p2uGd253Ofn3q67Im3xRzsVXaUV92RTtRP47xOfDhb8GgKPW1djxXSrO+8z+f1itVVFkuKbfmWcFiKQREWhsEXaVB0NVrohNc9T2ejjcwOaY3GQ+ODxcIG3mVsf7H7d/wDXtr/7bf8A+i07yPiS1ob3+n5o6lRdmXDoqpoXltPrrTr3cOQJ5hEc+eC7bzXPTPR1RUV9o62+6r0nPbIJBJURx3AuLwNw3BaAQTjO/LKd5ELRXZw180SeneiOG8dGtHdIpJG3mqc2ZuZP0YiLwMYx+52vbsuwoOi7TdPq2lucVspDQw0JhNNIwPa6XIDXuaQQ48PFknvwee607Jr3To13UWekutFT2Wmtcbad3WBkAka4khpzj6Dm/wBg+Chqvpjon6Qqp4qkR3dtf1cMTYj2oetBDvD9VkHfn7VHfeSf96l3WtBTFN4bXzcf9595UaXowuM3STJTOtFR+brLm6N0ucAxDLwAeeOEcPENsnGcq3XnoystX0uUsTaFkVnloHVU9PDmNhe1wZwjhI4QeJh2xyPirRfOlfRtqlEX5Q9cc6m69jqYCRrj3Rkg9l58DjHeQq7D0qx/7J33d9xo/wA4gXRCn7PFxmTAPB+6GYOeW3inFY98eRr3OhqzHiz+rp06e8kNIdEVktN0luVWJZJqe4megxLsyJpBYHDvPj7B763LdhrXWGpdAXqRksbqiY2mctAdTSx57IPeMA+4Ed+07pzphtN61TTUL2i20MlG4ySVZa3FRkHhDuLHDgO3OCSRsO/qyy3aCLpzbdIJmvp5r3Jwyg7Fkkjm8WfDDsrMYzbblzOd9umhGEaPZbw/Nf1ly1je6/o3g0tp2COmkom0XHdKUxNe2pLjiQZIzz48cue+RspC422fo80Nqe66eqDBHV1VPNb5gA4iIlmxDs7DieN+72qpekrUCbX8ETXZ6mgjaR4Eve77CFbuk+va/oBs7i/idUw0bBvjcMDv8qz0j5mraU7kn7CfD5bcP98xp6w0GuL9pvXkNHCON0gvEIxwCeNp4HcJ55cBnnsW57yoeK5w9Ktfc9N3enpaW605kktFZG0ggNJzG/c5GMH3E8xvKejNXtbpq+Ur5Bw087Z8E8g5hBP/AKa696DJur6U7S5zuEP65p98T9vis4eZeXI0c4uNXhY/vefJf++rOw+kHVw0hqK26ZuFIy4WB1nihrKTAOd3N4mk43AaOZwfI7ihdIOiaGhtFFqfSk1VX2StDnHjjJdT4P7Rx9HORk8scznK2fSLlEnSVMwOz1VLCz2ZBd/mV76Jozeegu42ptRDC8CqphJM7DGcTeIEnuHbRfcipGJx+032Uy6Zx4rHT0PPq7c0xGH+jbqLLuHFdxDbnh0Ch6Tof1VPXwRB9vkpHvAlq4Kpj2xM73YJBO3cPkuzr/o1unehq+2S11FRcGSu6+EFnE/BdH2ezz+iTkAc+S2nOOyz1OWj0l0VOco4XC/4PNqLuno8t9l0Xpmlr9X2yE1l+rBSsiq2AOhp+Re5rhs3vPkWqDvXQ7qgX+sitVNTutYkLqaolqWAFh3AIzxZAODt3Fbd4s7kZ6G3gUorL6pc14Z9TrJdo6xpDH0B6SlwezVSf3zKfuWSwdFj7VdG3DW1baobJTguqAKs8UnZPC0cODzx3g9wXYev9Gx3jo0t1i0vNTPp6eeOSCSWcFgjw/J4+8drPetZ2LKJOm0VvdWNrfHLrzT5Hnehst1rrZWXOjoJ5qOiANRKxuWx58ftOOQ3Kj13hR6s0/oessujKGppq63ZeL3VNaHMkfIOHn4NPP8AqgDmCq/c+jGzev1IpNeafhbLIXUEMlS0l0Z5BzuLbwBAOcbeC2VnicJ6PZd28tc+Wz/u3qjq9dy+k0A06baN8Qzb/wDbWLS3Q/R9fIdU6gomQycMdGaCrbmWQ52y9u/kAMn3Kx9PWlL3qO56epbLQyVAY2Zj5OTI/oYLnchyPtxstHOLmiTVo7Y6WxuO7xjx5nnxF3jPa9Cvo5OjSE0DbxFS8bbq8AB1YDvHxYz7t9st5hVM9E9wJNPDqfTU9wGT6pHWEvIHljPxHvW6sXUiT0Vi9nf06PwOul3LZo2n0ZLpuG/7wXHzPXR/gFzsXQ7BJpmvp7nXUrdQyHNHwVB6uJo5cQAyeI5zscDGN8qzV2j7nZug24acicbnVntxilY4l2ZWuwBzPetJ2ReEvEmaXRXVqcpLZxZ5xRdyaWsWndBWWCr17b6aouN2nbDHSytbIaWHOHSEbgeJI35Ab5Ubd+iOdtznmpdRWCltc0pNE6oqyHPY49gfRwTjwJz5rfvFkhvQ28Ka3fVdV4Z9Tq1drejGB+e9c7AJFvd/+yNZtI9DdcL412qZqZlrY0nip6jeZ3JoBxkA8/HbzV46Kujms0dqi518tXTT0U0b4aYAkyhnG1zS7sgZwN8d60ssi4tZJeg0V8boTcdsnnrUTOr1BcYyQeGqlGR34eVoLtXTOhpG6mumo9ZUTqGxUE0sz2zt4fWHcRw1re9vyOwGcqM6VLfYq+2W7WemIKakoKz9BU0kfC0wTgE44BsMgHltsD+0uims4IUtLNQc3t5dceJ16iItyKEREAREQBERAEREAREQFg0fS5fLVuHL9Gz283H4YH8Ssq0NPw9TaYG4ALm8bvMk5Hy4fgt9ep0FXd0R89zz+ss47X5bBad5qfVbdNKDh3Dws+sdh8Nz7luKA1lIRT08Q5OeXH+EDH+IrOts7uiTRjSQ47oplZREXlT0IREQBERAEREAU1FqKqjiZGIIMNaGjn3DHioVF1qunU8weDnZVCxYksnKV5klfIQAXOJIHLdcURcjoEREAREQBERAEREAREQBfQS0ggkEbghfEQGxcK2ruFZJWV9TLU1EmOOWV5c52BgZJ8gApW66qu1z0vbdO1T4jRW5znRFrSHuznHEc4PCCQMAbHfKgkWMI2U5LOHz5khZ71dbOyrZba2SmbWQmCoDMdth5jfl7RvufFYrNcaq03WludE/gqaWVssZIyMg9/iPELURZwOJ7b8iS1NeazUN8qbxcOr9ZqXAvEbcNGAGgAeAAC3rRq26WzSVz01TiE0dxeHSOc0l7OWeHfG4aAcg8lX0WMLkZVk1Jyzu/rzPoJHIkK4aS6R9S6astRa6Cq4onjEBlAd6sc5JaD4+B278KnIjSfMV2TrfFB4ZIX693a/V3rt4r5qyfHCHSO2aPBo5NHkFqyVdVJCyCSpmfFGMMY6QlrfYO5YUWTVybeWwpWK/3CLSs2m2OjFBNVCqeOHtF4bjGfDYHHiAopEwFJrkEREMH0Eggg4I5FWS8671Zd6KmpKy9VfVwMLP0chYZcnOX4PaPdk/jmtIsYTNozlFNJ8wiIsmoVlsuudTWbT09jt1ykgpJSC0tOHw9riPA4btyef+pVaRYaT5m0Jyg8xeDNWVVTWVL6msqJaiZ5y6SV5c53tJ3WFEWTUKb0dqm8aTuZr7RO1j3N4ZI5G8TJG+Dh+GCoRFhrPM2jKUHxReGSd7v97vbgbtdaytAcXNbLKXNaT4N5Dn3KMRFkw5OTywiIhgIiIAiIgCIiAIiIAiIgOwKRnV0sUeCOBjW4IwRgAfcsq+MILcgh2e8d/mvq9lWsQSPMTeZMKr6ycfW4G52EZP94/grQqvrJp9cgdvgxkf3j+Kg9qfke9Evs/84gkRF5svAiIgCIiAIiIAiIgCIiAs1LZLZUQRObUSF7mgkNkbzxyxhZXaboiOzLUA+bgfuVUV7tDi+2Uzi7iJjbk+wYVxolTqJOMq1sis1TtpXEpka3TdJntTTkeRA+5cjp63Mw581QG4P7bf/apl30TvhUW7PfJdKlz8561wwe4A4A93JdNbDT6ZLEM5NNLO69vM8YOFfHHDWSxQuLo2uw05zlWNmn7bI0dXNUOPeWvaQR5bKqr61xa4OaSCDkEHBCqqrYRk3KOUWNlc5JKMsFnfpqmJ7FRMB5gFfWaapR9OomPswFNsdxtDxyduPevp7sODdxueQ816D7DpnHPD/JS/a708cRCxacoBnrJqh3hwuaMfIoNOUPFky1Bb4Bwz8cKuPrax5BfVzuIOd5CVtW+81lLMDJI+ePkWPcTt5Hu+xVUNRpG8SrwvUsZU6lLafyJSXTMJB6uqkae7iaD+ChbjbaqhOZmBzD+2zJb/AKK7xSMljbJG7ia5ocD5EZXyeOOWJ0crONjhhzfEeCn29m02QzXsyHXrrYSxZudeos1bAaarmpyeLq3lufHB5rCvPNY2LpPIREQG5Z6P16vZCeIRjLpCO5o+zOw9pCn3acouAgSStdjYlwwD48lx0lS9XSuqnDtTHDdv2QfvOf7KnFe6HRQlTxWLLZUavVTjbwwfI68kY+OR0cjS17CWuB5gjuXFTOq6Tqa1tQ0dmYb/AFhz+WD7SVDKmtrdc3B9C0rmpxUl1CIi5m4RFlpaeapmEUDC957gspNvCMN43ZjALiAASTsAFJ0Njrqloe5rYWHcGTmfd+OFYLTaoKFgdgST98hHLyHgPt+S2q2rgo4utnfwjuHMnyAVvT2ZGMeO94K23Xty4alkiINNU4z11RK/w4QG/isx09biMB02frj8FFV1/q5i5sAbDGfLLiPafuUdLV1coxLVTPHg6Qlc5ajSQ2hXk3jTqZbyngsx09biPpT58nj8FrVGmmbmnqXjwa9oPz2+xQkdfWx44aubA7i8kfDkpa3aila9rK1rXs/faMEe0cj7sLMLtHY8ThgSq1UN4yyadXY7hTjiEbZm/wDLOT8OfyUaQQSCCCOYK7A62PqBPkOj4Q/2txn7FQJHukkdI9xc5xJcT3krjrtNXQ1wPOTrpL52p8S5HFERQCWFs22lNZXRU4JAce0R3NG5PwBWsrLo+l4Y5atw3f2Gewbn58PwK76anvrVA5X2d1W5H06agx/xUjfMtBwq3LG+KV8UjS17HFrge4jmuw1VNWUvVVralo7EwwfrDAPywfaSrHtHRwrgp1rHiQdFqZTk4zZCoiKnLMIiIAiIgCIiAIiIAiIgL/Qv6yigfzLomE+9oKzKN01L1toh7WSzLD7QfwLVJL12mnx1Rl5Hmr48Nkl5hV/WUZMVPKAOy5zXHv3Ax9jlYFH6gp/WLVM0fSYOsb7W8/7vEueuhx0SS/uDppJ8F0WUpEReVPQhERAEREAREQBERAEREAV5swxaqYf8sFUZXewZ/I9Nk5PD8slWnZP5z9Pqiv7R/KXqb3M4XX1SSaiUkknjO55nddgjmPauvqj9fJ9Y/au/bH6Pf9Dl2Z+r3GNERUhanYFHtRwDOf0TN/4Quby0MJf9Ebu9nesNt/o6m/6LP8IWaXeJw8ivXxf4Kfl9DzUl+L7zrxEX0Ak4AyV5A9KXHTEhfaIgf2C5nzJ+9SZ2GVqWimNJboYHfSDcu9p3Pwzj3LJXVMdLSvnlwWsGcE/SPcPfy+fcvV0PutPFz6I87cu8uaj1ZTr7/S9VvnEhB9o2K0lzmkfLK+WR3E97i5x8Sea4Ly05cUm/E9DFcKSCyU0L6iojgjxxyODW58ScLGp3SNNx1UlU4bRjgb9Z3P5Z+IW9NTtsUF1NLbFXByfQv2g9J3PU9x/Itig62aGjlqMHbsRMLj7zgAeLnBRAOQCO9evvQW0cKPTl01vVRYnuMho6MkcoIz2yPrP2/gXQ3pG6NGiOlq7W6CIx2+rd69Q+HVSEktH1Xh7fcF6OnUxdzpXJciktokqla+p1ZfqX1u2ysAy9v6Rntbnb3gke0hUldi78xsRuFSL5SikuUkbBiN3bYPAHu9xyPcq/tanElYuuxM7OtynWzRREVOWYVx07QNpKJsjm/ppQHOJHIdzfv9vsCrFpgbU3KCF4ywvBcPEDc/IK978zzO5Vv2VQpSdj6Fb2ja4xUF1CpF6rnV1YXgnqm7Rg+HjjxP8APJWm+zGG1VD24yWcI/iIafkSqQs9rXPiVa5czHZ1Sw5sIiKnLMIiIC3Usg/NbjJJ/wB3e0nl3OA+5VFEXe+/vVFY5LBxqq7vi35vIREXA7HKNjpJGxsaXOcQGgd5K7R0Vpq5Xy40unrHTmqq3RPLGN/aDGOe8+/Dj7wFRNK0vXV5ncOzAMj6x5fefcvanoJaNDn3jXdVF9H/AOHUJI9jpXD+43+0rXRfgUyvfPkiv1X41kaV6s8rg5AK0r7S+t22WMDttHGz2tz9oyPaQu1fSQ0b+ZPS1daCCIx2+td6/ReHVyEktH1Xh7fYAuuNwcg4I3B8FctR1FPk0VacqLPNM66Rb18pPU7jIxrcRv7bMcsHu9xyPctFeTlFwk4vmj0cZKSTQREWpkIiIAiIgCIiAIiICe0hUhk8tK4/rBxs9oBz8sn+EKzrr6nlfBOyaM4exwc0+YV6oKmOrpY54vouHLP0T3j3fge9XvZV+Yup9ORUdo04asRnQ+73oiuCtKNeKM0Ve+IAiM9qMnvaTt8Nx7lpq63y3tr6Qhu0zN4znG/eD5H7h5qlva5jyx7S1zTggjBBXldZpnRZjo+R6DTXq6GevU+IiKISQiIgCIiAIiIAiIgCu9h/oel+p/mKpCu9h/oel+p/mKs+yfzn6fVEDtH8pepvDmF19Ufr5PrH7V2COY9oXX1R+vk+sftUjtj9Hv8AocezP1e4xoiKkLUvttObdTH/AJEf+ELNL+rduRsdx3bLDbsfk+mxj9TH/hCzSgmJwaMuIwB4leuh+SvT6Hm5fmv1+pVbJbqCupj1s0jagPI4WvA2wMHGN+//AE75yhtFFQvMzGPc5u/HIclvyACpSLz1GqrqSzWm11Lq3TzsbxNpF3rLtQ0rMuna89zYyHH/AE9+FVbrcZq+bif2Y2k8DM5x+J81pIsanW2X7PZGaNLCndcwiIoZJC7E0TYa24VNtsNvhMlfXTshjYBzkkIG/syAfqql6fpRV3NjXjMcf6R48QOQ95IHvXoz0W7lo2wdI/5yayvEVBFb6dxomyRPf1k7+zxdlpxwtLufe4eCtezoOMZXYzjZepX62alKNWefM9zaNsNJpfSlr09QtAp7fSsgYQMcXCMFx8yck+ZXSfpu6NN50BSarpIS6rsc36YtG5ppMB2fquDD5DiV6b069ExH/wA6UXvil/8AatK/dMnQ1d7LW2m4awoZaSsgfBMzqZTlj2lpH0PAqNTG+u1WcL+DO9rqnW4cS+J4BULqyl62ibUNHahO5/qnY/A4+JViulPT0lzqqWkq2VtNDM9kNS0ECZgJDXgHBGRg4K1JmNkidG8Etc0tcBzIIwfkV6HU1d9U4+JSUWd1YpHXqLLVwOpqqSnfu6Nxbnx81iXkmsHpOZKaXAN4jJ7mPx/ZIVxVL04/gvEOf2uJvPvLSB88K6L0HZL/AAmvMpu0l+IvQi9Uf0PJ9Zv2qnK7X+IzWmoa36QbxD3EE/IFUlQe1Fi/PkS+z3mr3hERVpOCIiAIiIAiLbs9KKy4RQuB4M8UmP3Rufw9pWYxcmkjDaSyy26Ut0xpaWkp4XSVVW9obGBu57yA1o/u+8lfp30XaVp9FaAs+mqdrQaOmaJnNH6yU7yO97iSvEHoxx6Yi6VqO86tvVutdDamuqozVzCNss/JgGfAku/hC9pDpW6MyM/n/pj/APJxf+5WuujKMYUwWy/kr9JJSlK2T3Z1j6bejfy10e02qqSEOrLFLmYgbmmkwHf2XcDvZleLF+i186Reii62estdfrrTM1JWQPgmZ+UojxMcC0jZ3gV+e1/oYLZfK+3UtdBcKemqHxQ1ULuJk7ASGvafAjBUvsucuBwkuRG7QjHjU4vmVjVdJ1tCKlo7cJyfqnY/PHxKqi7DlY2SNzHt4mOBa4eIIwR8FQq2ndS1ctO85MbiM+I7j7DzULtSngs41yf8krs+3ihwPoYURFVlgEREAREQBERAEREAUlYrk6hqOF5Jgee2MZ4T+8P55e5RqLeE5VyUo80azgpxcXyOw4pGSxiSNwc124IOQVyVNst2koHiN+X05O7e9vmPw/8AKtlJUwVUQlgkD29+O4+C9LpdbC9Y5S8Ch1GllS/FGZRd8tLK5vWxkR1DRjONnAdx+4+7wxKIpF1MLo8M0ca7ZVS4onX1RBNTymKeN0bx3Ec/MeIWNdgVNNBUx9XPE2RvmOXs8FCVemmOy6mqCw9zXjI+PcPiqK/su2DzDdFvVr65e1sytIpSSw3Jry1kTJAP2mvAHzwsT7Pcmc6Un6rgfsKhPT2rnF/Alq6t8pL4mgikBZrkTj1bfGd3tH3rNDYLg9xa9scWO9zs5+GUjp7Zcov4GHdWucl8SJXKNj5HhkbHPceTWjJKstLpuBjuKondL/VaOEf6/JTFNTU9NGWQQtjae5o5/efeptPZds/b2RFs7Qrj7O5RamCank6ueNzHYzg+CxKT1HV+s3FzWn9HD2B5nvPx+QCjFX2KMZtReUTYNuKcuYV2sBzZ6b6pHzKpKvNlz+SqbIwerCseyfzn6fVEHtH8pepuDmPauvqgg1EhHLiOPiuwDyKoNcA2tnaBgCRwA8N137Y/R7/ocuzP1e4woiKkLUv1A0MoadoOQImf4QszyWtLgMkbgeK4UzeGnjbjHCwDnnkFk3yC0ZdkYHic7L2EF+El5HmZP8R+p10iIvHnpgiIgCIs9BTPq6yKmZsXuwT4DmT7hkrKTbwjDeN2WXStN1NvM7h2pjxfwjIH3/Jca3UDKaslp/VDJ1bi0uEuMkc/2T3qSq5W0dBJKwcAhjywc8YGGj48IVEJJOSclXGpunpIQqreH1K2iuOplKya26FhOpznaiGP+r/ovrdTjHaoSfZNj/Kq4ih/5DUfu+SJP2Kj9v8AJdLPdGXHrcRdUWY7JfxEg535Dw+akVSrBUilukTnODY5P0byTgAHvPsOD7ldfaMHwVz2fqXfW+J7oq9bQqp/d5MrOr6XhljrGjZ3YefMfR+W38KgFfLlTCroZacgZe3s57ncwfj8iVRHNLXFrgQQcEHuVT2lT3d2Vye/+yy0NvHVh80c6eV8E8c0ZAfG4ObnxByr9BIyWFksf0HtDm+w7hdeqf0xchF/uU7gGE5jcTsD3t+8eftWezdQqrOGXJmNdQ7IZXNFle0OaWuaHAjBB5EeBVFulI6irZIDktByxx/aaeR/Hzyr2tC9W5lwpw0ENlZux57vI+R/nvzadoaV3w4o80V+i1CqliXJlJRZamnnppTHPG5jvPv9h71iXm2mnhl4nndBERYMhFkghmnfwQRSSu54Y0k/JY0AVo0jSiOlfVvHalPC3P7oP3n/AAqt0sMlRURwRDL5HBoV5JioaHIGYoI9gRjiDRyPt+0qx7OqTm7JcokLXWNQUFzkadXfKOlqn08jZi5mASxoIzjccxuOXuWs7UtMHENp5XN7icA/BVmR75JHSSOLnvJc4nmSe9cVh9p6hvZ/IytBTjdFqi1JRnPWxTs8OFodn5hbtsudPXukEIeCzGzwATnPgT4fMKkLfsFV6rc4nOdwxv8A0bz3AHvPsOD7lvT2ldxrjexpZoa+B8K3Lsq1q+l4XxVjR9L9G/2gdk/DI/hVl37xg948FrXKmFXRSwH9pvZ8ncwfj8sq31tPfUtLnzRW6W3urU+hQ0X1zXNcWuaWuBwQRggr4vKnoQiIgCIiAIiIAiIgCIiALLS1E9LL1sEjo38sjvHgfFYkWU2nlGGs7MslFqRp4WVcJb3F7Nx8D+JUzS1tJVf8POyQnuB3+HNUJFYU9p3Q2luQrNBVPdbHYvfhFRIrhXRY4KubA5NLiW/A7Lbjv9yae1JG/wBrAPswp0e1637UWRZdmz6NFwRVI6iuGMYhHnwf6r7+cdfgdiDb+qd/mt/8rR4M0/x1vkWxFTZL5cnE4ma0EYwGA/blac9ZVzt4ZqmaRuc8Lnkj4LnPteC9mL/vxN49mz/Uy4Vd2oKZp4p2vcP2Gdo/gPfhQlfqKok7NIzqB++d3e7uH87qDRV93aN1u2cLyJtWiqr3xlhERQSWWCn042SFkj67h4gDgRZ5j2qwxMZDCyIHDWNDRk9wAA+xUdlwr2MDGVtS1oGAGyuAx8V9ZcbgwYZXVTR5SuH3qzo1tNG8Ib+pAu0ttu0p7ehenYxuQAVB19gZUVUtQ2r4DK4v4SzO5O++VX462tidxR1dQwkYy2QhcvylcN/9/qt+f6Z2/wA1vdr6b0lOHLzNatHZU8wn8jHWQGmqpIC7iLHcOcc1Nx6a3HW1oG+4azP2lQEj3yPL3uLnOOSSckrYFxuA5V1UPZK78VAqnTGTc45XTcl2RsaSi8MvWWt5kD3oTgZyAqMy5XFgwyvqmjwEzh964Mra1jg5lXUNcOREhBVr/l4/sK//ABsv3E1Uac4nvfDVDBJIDm8vLOfuULcKV9HVup3ua5zQ05by3AI+1cjcbgTk19UT5yu/FYJpJJpDJK9z3nGXOOTtsFV3Tpkvw44fqWFUbYv78snBERRzsbNtpHVtW2na8MJBOSM8hn7laLLaY7e98hl62RzeH6OOEd/efJVGGWWGTrIZHRvG3E04Kzm43At4TXVJb4da7H2qZpbqqnxSjlkbUVWWbRlhFxulIK2jdTmUx8RB4gM8j4d6rF2s76CHruvEjOIN+jg5OfM+C1G19e3PDW1Lc88Su/FcZ6yqnj6uaolkbnOHOJ3XTU6qm/L4Xxepzo09tOFxbGBERV5NJqjsE1RBHMZ2ta9ocMNzzVqaCGgOcXHvJ7z4qisuNcyNsbKqVrWjDQHYwF9NzuJ51s/9sq00+soo9mLz6lffpbbvaksF6UHdbCKmpfUQTCNz9ywt2J8c+f2qBFzuAORWz/2yuYu9yBz63Jyxvgrpdr6L1icGaVaO2p5hI1JmGKV8biCWOLTjyXBcnuc97nuOXOOSfEriqh89izRO2i/OhYIawOewDDXjmPI+I8+ft7rHT1MFRHxwTMkb4tPL2+HvXX65RvfG8Pje5jhyc04IVhp+0bKlwy3RCu0MLHlbMv8AUQQ1EfVzxtkZ4Efzg+ai59PUL3F0fWx55Na/YfEE/NQcd6ubAAKouA/ea0k+8jKzjUVcGAcEBPe4tOT88KVPW6S78yG5HjpdRX7EjdGmo85NS8jwxj5ragsFujIL2ySk9z37e7GFDy6hr3/QEMX1Wk/4iVqVVzr6kES1Ly0jBa3sgjzA5rg9Roo7xrz6/wDWdVTqpe1PBZK6vobbTvhgMYmA7LGDk7kCcbbefNVegppK2rbTxuaHvDjl5ONgSfsWustJUS0s7Z4HBsjc4JAPMYOx8iol2o76aclhLoiTVR3UWovd9WWeyWV1DUOnnkZI/h4WcGcDPPn5be8rfulM6soZadr+AvAAPdsQd/gqo683JzeE1ON85DGg/HGV8jvFyY7iFUXfWaHD4EKdDW6aFbrUXhkSelvlNTcllGS42WpoaczySwvYCB2Sc7+0KMW7VXSuqoTDPMHMJyRwNH2BaSrbXW5fh5x5k6tTUfv8wpWjsVXU08c7JYGtkGRxF2R7cBRS3oLvcIIWQxThrGDAHVtPzws0upP8XOPIxarMfh495dIWvbExsjuJ4aA53icbn3ndc1TH3y5vGDUNHm2JjT8guLb1c2uB9ZzjucxpHwIVzHtWpLGGVj7OsbzlEteLFJUVbqimkjbx7va/I38RjPPmq5PG6GeSF+OJji048QcLf/Lt0zn1hv8A2WfgtCWR8sr5ZDl73Fzj4kqq1M6JvirTTLCiNsVibTOCIiikgIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAti3UdTcK6GipIzLPM8MjaDjJK11v6fdUNvVK6lroaGdsgLKiZ/CyM+JODt7kBt6i0++ytaZLrbKt5kMb46WcvdG4c+IYGPBNI6auWp6+WjtoiD4ojK90hIaAPYD/IKsHSJJa57RS1E81olv75j177ZJxxvjwe0/u4s4/nlM9DWtbf0cW6bUJp6S5V9VK+mFI9+S2IxuaXFoII+k7HtCA6zmpZIK99HMWxyRymJ5J2aQcH3KaOj7sNUO09mn9aazrDJxnq+Hh4s5xy7uXNZOkl1BNqiSvttRFNBWRsn7Dw7gcRhzXY5HIzjzVnqL7bvzM/LTayH8sy2xtsMPGOsGHkF+Oe7d8+xAUOxWipvN4itdE6IzSlwYXOIacAnnjwCxWygnuF0gttPwdfPKImcRwMk43Km+i+ppqPXFBUVc8UELOs4pJHBrRmNw3J81q6Omhh1tbZ55WRwsrGuc97gGgcXMlAfZ9KXaC43KhlZE2a3UxqZsu2MYxu0435qNtFtrbtXx0NvgdPUSfRaNvaSTsB5rsmnv1ruFkv5qauGOvpqWqpIXOeB6xC9xcwA95BGMDuPmqt0a3Cio7lXUtbUtpBX0UlNHUu2ET3YwSe4bc0BG33T09opxLLcbXU/pOrcylqhI9jsHmBy5KGV2v1qtdu0PwymzyXVlS1jJaOr6x0seCSSM7b+Q7lSUBvi01hsBveGeqCp9Wzxdrj4eLl4Y71htlHNcbjT0FMGmaokbHHxHA4icDdW+xUjLr0ayWuKvoKepF167hqahsfYEYGd/MqE0o1tBrq2sqJ4Q2CvYHyB4LNn7kO5Y80BoRWqrkvoswEbas1Hq+HPw3jzjGfatmHTl0lrrjRiJjZLax8lSXvAa1ree/f5eK46iqOHVlxqqaUHFdJJHIw5H0yQQVedbXS2t03WXOgqYTV6g9XEsTHguiaxvaBHduMe9AULT9lrr7Wvo7e2N0rIzK7jkDAGjGTk+1fL3aKqzzxw1T6Z7pG8Q6mZsgxnG5B2Vi6I5YYtRVfXupw19vmYG1EgYx5PD2ST4qP13TGC4wO9TtVIHRYEdBP1jDgnc77Hf5IDFHpS7OtAukgpYIXwmaJs1Q1kkjAMktaTk7KCXZdBCyv0e1mqWWs0lPRZoa6OpaJ4zjsxloOTzxjHMd53XWiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAi26G31Va1zoI8tacFxOBnw81irKWekl6qdhY7GR3gjxCxxLOM7nR02KCscXwvr0MKLLTQS1MwhhbxPOcDOOW64zxPhmdFIMPacEZTKzg14JcPFjY4Ii26S31dVF1sEYcziLclwG4x4+0I2ksszXXOyXDBZfkaiLYrKKppOAzsDQ/PDhwOcYzy9oWuiaayjE4SrlwzWH5hFIOs1xa9zTAMtOD22/itSqp5aacwzN4XgAkZB5gEfIrCnGXJnWzTXVJSsg0n4poxIiLY4BERAEREAREQBERAEREAREQBERAEWzS0FXVM44YS5uccRIAz71gkY+N7mPaWuacFpGCCsZT2N3XKMVJrZnFFzijfLI2ONvE52wHivkjHRyOje0tc04I8Cs5NeF44sbHFFs01DV1MZkhgc5gOOLYD3Z5rDNFJDKYpWOY8cw4YKxlZwbOucYqTWzOCLMKac05qBE4xN5v7hvj7SvjqeZtO2odG4ROOA7uJ3/A/BMoxwS8PMxIiLJqEW0+31rGcbqaQADJ23A8x3LVWE0+RtOEoe0sBERZNQiIgCIsjoZmwtmMTxE44Dy04PPv9x+CGUm+RjREQwEREAREQBERAEREAREQBERAEREAREQBERAEREBJ2iOrqon0olMdHxcUx2AHfzPLl8t1x1BWRVtdxQ5MbBwh2/aOck7926xUtyq6aEQwyBrASccI5n/wFjrKyoqy0zvDuDOMDC5KL48vkTpXVfZlCLfF12225JPPJenM7E6KrXpJtovdw1Ncnw1ItspttOyGRxqKktIjaXNGGtacOPEQCeEcgVQ7w10F3e98bXBzuMNO4cPPHsWlBK+GVsrDhzTkLm6plNX61kdbx8ecbZznksRrkpuTZ0t1dU9NGmMWmn47ct3y6/wBZPXWipKa2Pqo6FwkkDRhxyI8jw8RyPnj2KLsUD6qvZDl/VjL3taTv5beJwPeuBulcetDp+ISt4XAtBGMY8NlioayeildJTuDXObw5Iz3g/cFlRkotdTWzUUzvjNLEVzWy6+Xj8uS2SM18rDWXCR4cDG0lseBgEePv5/8AhaKIuiSSwiFZOVknKXNlo1SaIXFvrfX8XC7h6vGOHjdzz35yq3UmEzuNPx9V+zx8/et6W81kry+UQvce8xhaVTM6omMrw0OONmjA2GFyqjKOzJ+v1FV74oePhj553LCynoY3UMRo43esREuceeQwEfMrFPBQyUtwjio2xmlPC1wduTg9/tB9xCizc6ovp3HgJpwQzs9xAG/uAXEXCoAqR2MVJzJt378viVr3cvH+5/0dnraGscKxv0X7cf8A1uZbDSxVVdwTDiY1hdw+PID7fkrf0mUPRvT01KdD3S5Vj/V2mq9ehZE5swI4gwNccsIJODuMDc5VFpZ5aads0LsPC3K671VXTugcGRxudxPDAe0ee+T5LeUZOaaexHpvohp5QlH7zz08ljfpgy6YpaeqrJmVDGua2LI4iQAeNozt5ErSuE8E8rXU9MIGhuCAc5OTv8MfBKCslonyOiDCZI+A8QztkH7gtZbKL4mzhK2PcRrS3y87emN+fiehugvoQsuvujjVGo6u4upZ7PTB0EYblskgjMhMhzkNwMDhx474wehr5DFT3J8ULOBgawgZ8Wgn7VYbLqasttpdQUWoKulp6pgZWwsc9olaB9BwaeFwG4HEDsfcq7eqiOpuUk0JJYQ0A4xnDQPuXOvi49ydrHS9OuDGcrbbKWN91vz8S+6ZsXR4dI3KfUd5raO9tiBtsDIA+Kd4bl3WP4gQCTwjHLmc8l15XRxxVcscLuKMO7JznZb1Ne6qGKJhZFIYhiNzgcgYx3Hw2UdNI+aZ8shy97i5xxjJK2rjJN5OGruosriq44fp5fPcsLqa2xT0sD6NpMzSS/id3Dbv7z7FBXCNkVdPHGMMbIQ0ZzgZWeW5zyTwTOZFxQDDQAcH27rVqJXTzvmeAHPcXHHJIRknuNXfTZHEFjfbbG2F9Saq4LZb6mOmno5JstJc8OOTjbYZHeD3jCh43U7axrnMc+nEmS0nctzy278LejvdS1jA+GCV7Bhsj29rljn7Pj35WgXOqarimlAdK/L3u5ZJ3JWYJrmaaqyqbTr+GEscub6/3xLA+00UFTPUSxh1IyIOa0OIBIznBzv9H++FWjzU5dK6JtniooqjrpC1rXuHLhHd8mj+HzUGsVcWMs217q41GtLxePF7426Lkd19D9s19bNC6h1TpuiiqLXDQuobpK6FkvVwz4LuFrsklow4uA7IO+y6lvtPPFUiaodCXTDIbGSeEDA7/wCdipnT3SBqywWqqtdpvVfRUlWwMqIqepkiZMAMYeGkB223mM5UFcbjLXNYJYoWlvItac48Mk8ufxWkITU22SNVqdPbpowi3lYx8s58+eMbYONo/pOn+uF8uv8ASVT/ANR32rDTTOgnZM0AuYcgHklRK6ed8zgA57i4gcl14Xx5IXex+zd314s/Im7/ADz0sdIynLoGBvNhxkjAx54GPitC9S1ks0bqynbC4NwOFuAe/wAfPl3L7Dd52U7IJIoZ2x44DI0kjHLv7lrXCsmrZ+umwDjAa3kB5LSEHF7r3nfV6iFsW4ye+Pu9Fhf3BKwEfmlPv/PWNWGsB/NqjODjjO/8T1rW+5SUsD6cxRzQvOS14zv/ACBz8EuFxkq4WQCKOKFh4g1gxv8AyTy8U4JcXvybfaKu6znfh4ce/nk0VsW1746+CRkTpXNeHBjRknHh5rXWSnmkp52TRO4XsOQV1fIroPEky1QTsfWOfTVZbPwYMEzCA0jy2IIxuQT381WjTyPuXqr2tjldN1ZA5NPFj4KQ/Lpz1goYOvwB1hHPu8M8sd6inTSGoM5eetLuPiHPOc5XKqDjksu0NTXco4eXl5543x4538cbHY8+jdGN6P47qzVsP5edPwPtRp5RJHFkgPMh7BPIkAcjzyuvLfE2a408Egy18rWuHkTgrekvDJGue6gpzUObgyFoI+BH3/JR1LMaeqinaATG8PAPfg5SuM0nxGust007IupYX08OS+vqyQvcVvpQaWCGQVLS1xcTlvCW5xz57t7u5faG3xVtpkfAxxq2PAwDz32+Wf7KjquY1FQ+YtDS45wFntdfLQSvfG3iD24Izj3+38Ss8MlBeJz72mWpk5LEHlbLkujx5czJfKelpKhkFMXEhuXlx8eXy396zVMAbpmmn62Ul0mOAv7I3fyHu+ZUdVzuqamSd4wXuJwOQ8vcs8te6S1R0BjAbG7iDs7ndx/zLPC8I172tzseMJp4+Kx8jLZqSnnZUVFUX9VAASG8znJ/ynw581irfyeaeJ9J1rZT9NjtwPf/ADz7l9tVe6hkf+jEsUgw9h7+f4n4lfbjXtqYIqeKnbDDGcgZyc+3+fsTEuPyM8VX2dJY4uu2/Po+ix/wsnRlpiyaiusMF/1BBYqGR72yVk8b3siDWg54W7uJJAAyB4qI1naKOzXqajobhDcKdkj2MqISeCUNOz28QB4SMEZGVp2+4+rU0lLLA2eCTJLScYP8gfDbCxXGqZVSh0dNFTsaMBrGgZ8yQBkrCU+PL5G87NP9lUYr73zzl+XLHn7iQtttpZrc2oIfPKXdpjXAcIzj44wdz3qPukEdPWOjiErWYBAkG/8AqFnt9xhpoWslomSOYctkYeB43z9IDKwXStdXVXXOYGADha0dwyT95SKlxvPIxdKh6aKj7X/c9Pq/caqIi6kAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgP//Z" alt="CIPACA — Saving Lives" style="height:44px;width:auto;object-fit:contain;filter:brightness(0) invert(1);">
       </a>
       <div class="nav-links">
         <a href="#doctors" class="nav-link active">
@@ -325,8 +341,11 @@ footer{background:var(--gray-900);padding:64px 0 32px}
         <a href="#medicine" class="nav-link">
           <i class="ti ti-pill" style="font-size:14px;vertical-align:-2px;margin-right:4px"></i>Medicines
         </a>
-        <a href="#" class="nav-link">
-          <i class="ti ti-file-text" style="font-size:14px;vertical-align:-2px;margin-right:4px"></i>Records
+        <a href="#radiology" class="nav-link">
+          <i class="ti ti-scan" style="font-size:14px;vertical-align:-2px;margin-right:4px"></i>Radiology
+        </a>
+        <a href="#" class="nav-link" style="color:#F87171">
+          <i class="ti ti-ambulance" style="font-size:14px;vertical-align:-2px;margin-right:4px"></i>Emergency
         </a>
       </div>
       <div class="nav-actions">
@@ -364,36 +383,36 @@ footer{background:var(--gray-900);padding:64px 0 32px}
       <div class="hero-left">
         <div class="hero-label">
           <i class="ti ti-star-filled"></i>
-          Trusted by 50,000+ Patients Across India
+          <i class="ti ti-ambulance" style="font-size:14px"></i>&nbsp; 24x7 Emergency &amp; ICU · Trusted by 50,000+ Patients
         </div>
         <h1 class="hero-title">
-          Your Health,<br>Our <span>Priority</span>
+          Saving Lives,<br><span>24x7</span> Emergency
         </h1>
         <p class="hero-sub">
-          Consult top-rated doctors, book NABL-certified lab tests, and order medicines — all from one trusted platform, delivered to your doorstep.
+          CIPACA delivers world-class 24x7 Emergency &amp; ICU care, doctor consultations, NABL-certified lab tests, radiology, and medicine delivery — all from one trusted platform.
         </p>
         <div class="hero-ctas">
-          <button class="btn btn-white btn-lg">
-            <i class="ti ti-video" style="font-size:18px"></i>
-            Book Consultation
+          <button class="btn btn-white btn-lg" style="background:var(--ecg-red);color:#fff;box-shadow:0 4px 16px rgba(192,57,43,.4)">
+            <i class="ti ti-ambulance" style="font-size:18px"></i>
+            Emergency Services
           </button>
           <button class="btn btn-ghost btn-lg">
-            <i class="ti ti-pill" style="font-size:18px"></i>
-            Order Medicines
+            <i class="ti ti-stethoscope" style="font-size:18px"></i>
+            Book Consultation
           </button>
         </div>
         <div class="hero-trust">
+          <div class="hero-trust-item">
+            <i class="ti ti-ambulance"></i>
+            <span>24x7 Emergency &amp; ICU</span>
+          </div>
           <div class="hero-trust-item">
             <i class="ti ti-shield-check"></i>
             <span>500+ Verified Doctors</span>
           </div>
           <div class="hero-trust-item">
             <i class="ti ti-certificate"></i>
-            <span>NABL Certified Labs</span>
-          </div>
-          <div class="hero-trust-item">
-            <i class="ti ti-truck-delivery"></i>
-            <span>Same Day Delivery</span>
+            <span>NABL &amp; Radiology</span>
           </div>
         </div>
       </div>
@@ -457,7 +476,7 @@ footer{background:var(--gray-900);padding:64px 0 32px}
 ══════════════════════════════════════════════ -->
 <section class="services-strip">
   <div class="container" style="padding:0 24px">
-    <div class="services-grid">
+    <div class="services-grid" style="grid-template-columns:repeat(4,1fr)">
       <div class="service-card">
         <div class="service-icon service-icon-blue">
           <i class="ti ti-stethoscope"></i>
@@ -488,6 +507,16 @@ footer{background:var(--gray-900);padding:64px 0 32px}
           Shop Medicines <i class="ti ti-arrow-right" style="font-size:14px"></i>
         </a>
       </div>
+      <div class="service-card">
+        <div class="service-icon" style="background:#FFF0F0;color:var(--ecg-red)">
+          <i class="ti ti-scan"></i>
+        </div>
+        <h3>Radiology</h3>
+        <p>X-Ray, MRI, CT Scan and ultrasound at AERB-certified centres. Home pickup, digital reports within 12 hours.</p>
+        <a href="#radiology" class="service-link" style="color:var(--ecg-red)">
+          Book Scan <i class="ti ti-arrow-right" style="font-size:14px"></i>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -511,8 +540,8 @@ footer{background:var(--gray-900);padding:64px 0 32px}
         <div class="stat-label">Lab Tests Available</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">2<span>hr</span></div>
-        <div class="stat-label">Express Delivery</div>
+        <div class="stat-num" style="color:var(--ecg-red)">24<span>x7</span></div>
+        <div class="stat-label">Emergency &amp; ICU</div>
       </div>
     </div>
   </div>
@@ -960,14 +989,150 @@ footer{background:var(--gray-900);padding:64px 0 32px}
 </section>
 
 <!-- ══════════════════════════════════════════════
+     RADIOLOGY SECTION
+══════════════════════════════════════════════ -->
+<section class="section" id="radiology" style="background:#FFF8F8">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <p class="section-label" style="color:var(--ecg-red)">
+          <i class="ti ti-scan" style="font-size:12px;vertical-align:-1px;margin-right:5px"></i>
+          Radiology &amp; Imaging
+        </p>
+        <h2 class="section-title">Scans, X-Rays &amp; Imaging</h2>
+        <p class="section-sub">AERB-certified radiology centres. Digital reports in 12 hours. Free pickup &amp; drop for select scans.</p>
+      </div>
+      <button class="btn btn-sm" style="background:var(--ecg-red);color:#fff;border:none">View All Scans <i class="ti ti-arrow-right" style="font-size:14px"></i></button>
+    </div>
+
+    <!-- Imaging Types -->
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:36px">
+      <div style="background:#fff;border:1px solid #FECACA;border-radius:14px;padding:18px 12px;text-align:center;cursor:pointer;transition:all .2s" onmouseenter="this.style.background='#FFF0F0'" onmouseleave="this.style.background='#fff'">
+        <i class="ti ti-scan" style="font-size:28px;color:var(--ecg-red);display:block;margin-bottom:8px"></i>
+        <div style="font-size:13px;font-weight:700;color:var(--gray-800);font-family:var(--font-display)">CT Scan</div>
+        <div style="font-size:11px;color:var(--ecg-red)">From ₹2,499</div>
+      </div>
+      <div style="background:#fff;border:1px solid #FECACA;border-radius:14px;padding:18px 12px;text-align:center;cursor:pointer;transition:all .2s" onmouseenter="this.style.background='#FFF0F0'" onmouseleave="this.style.background='#fff'">
+        <i class="ti ti-magnetic-resonance" style="font-size:28px;color:var(--ecg-red);display:block;margin-bottom:8px"></i>
+        <div style="font-size:13px;font-weight:700;color:var(--gray-800);font-family:var(--font-display)">MRI Scan</div>
+        <div style="font-size:11px;color:var(--ecg-red)">From ₹3,999</div>
+      </div>
+      <div style="background:#fff;border:1px solid #FECACA;border-radius:14px;padding:18px 12px;text-align:center;cursor:pointer;transition:all .2s" onmouseenter="this.style.background='#FFF0F0'" onmouseleave="this.style.background='#fff'">
+        <i class="ti ti-bone" style="font-size:28px;color:var(--ecg-red);display:block;margin-bottom:8px"></i>
+        <div style="font-size:13px;font-weight:700;color:var(--gray-800);font-family:var(--font-display)">X-Ray</div>
+        <div style="font-size:11px;color:var(--ecg-red)">From ₹299</div>
+      </div>
+      <div style="background:#fff;border:1px solid #FECACA;border-radius:14px;padding:18px 12px;text-align:center;cursor:pointer;transition:all .2s" onmouseenter="this.style.background='#FFF0F0'" onmouseleave="this.style.background='#fff'">
+        <i class="ti ti-wave-sine" style="font-size:28px;color:var(--ecg-red);display:block;margin-bottom:8px"></i>
+        <div style="font-size:13px;font-weight:700;color:var(--gray-800);font-family:var(--font-display)">Ultrasound</div>
+        <div style="font-size:11px;color:var(--ecg-red)">From ₹499</div>
+      </div>
+      <div style="background:#fff;border:1px solid #FECACA;border-radius:14px;padding:18px 12px;text-align:center;cursor:pointer;transition:all .2s" onmouseenter="this.style.background='#FFF0F0'" onmouseleave="this.style.background='#fff'">
+        <i class="ti ti-heart-rate-monitor" style="font-size:28px;color:var(--ecg-red);display:block;margin-bottom:8px"></i>
+        <div style="font-size:13px;font-weight:700;color:var(--gray-800);font-family:var(--font-display)">DEXA / PET</div>
+        <div style="font-size:11px;color:var(--ecg-red)">From ₹4,999</div>
+      </div>
+    </div>
+
+    <!-- Radiology Cards -->
+    <div class="grid-3">
+      <div style="background:#fff;border:1px solid #FECACA;border-radius:18px;padding:22px;transition:all .2s" onmouseenter="this.style.boxShadow='0 8px 24px rgba(192,57,43,.12)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.boxShadow='none';this.style.transform='none'">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+          <div>
+            <div style="font-size:16px;font-weight:700;color:var(--gray-900);font-family:var(--font-display);margin-bottom:3px">Brain MRI — Plain</div>
+            <div style="font-size:12px;color:var(--gray-400)">1.5 Tesla · 45 min</div>
+          </div>
+          <span class="badge" style="background:#FFF0F0;color:var(--ecg-red);font-size:11px"><i class="ti ti-certificate" style="font-size:11px"></i>AERB</span>
+        </div>
+        <div style="margin:12px 0">
+          <div style="font-size:11px;font-weight:600;color:var(--gray-400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-family:var(--font-display)">Detects</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px">
+            <span class="tag">Tumours</span><span class="tag">Stroke</span><span class="tag">MS</span><span class="tag">Aneurysm</span>
+          </div>
+        </div>
+        <div style="background:#FFF8F8;border-radius:8px;padding:8px 12px;display:flex;align-items:center;gap:7px;margin:12px 0">
+          <i class="ti ti-clock" style="color:var(--ecg-red);font-size:14px"></i>
+          <span style="font-size:12px;color:var(--ecg-red);font-weight:500;font-family:var(--font-display)">Digital report in 6 hours</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:14px">
+          <div>
+            <span style="text-decoration:line-through;font-size:12px;color:var(--gray-400)">₹5,500</span>
+            <span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--ecg-red);margin-left:5px">₹3,999</span>
+          </div>
+          <button class="btn btn-sm" style="background:var(--ecg-red);color:#fff;border:none"><i class="ti ti-calendar-plus" style="font-size:13px"></i>Book</button>
+        </div>
+      </div>
+
+      <div style="background:#fff;border:2px solid #FECACA;border-radius:18px;padding:22px;transition:all .2s;position:relative" onmouseenter="this.style.boxShadow='0 8px 24px rgba(192,57,43,.15)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.boxShadow='none';this.style.transform='none'">
+        <div style="position:absolute;top:-1px;left:20px;transform:translateY(-50%)">
+          <span class="badge" style="background:var(--ecg-red);color:#fff;font-size:11px;box-shadow:0 2px 8px rgba(192,57,43,.3)"><i class="ti ti-star-filled" style="font-size:11px;color:#FCD34D"></i>Most Booked</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;margin-top:8px">
+          <div>
+            <div style="font-size:16px;font-weight:700;color:var(--gray-900);font-family:var(--font-display);margin-bottom:3px">Whole Abdomen USG</div>
+            <div style="font-size:12px;color:var(--gray-400)">Ultrasound · 20 min</div>
+          </div>
+          <span class="badge" style="background:#FFF0F0;color:var(--ecg-red);font-size:11px"><i class="ti ti-certificate" style="font-size:11px"></i>AERB</span>
+        </div>
+        <div style="margin:12px 0">
+          <div style="font-size:11px;font-weight:600;color:var(--gray-400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-family:var(--font-display)">Detects</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px">
+            <span class="tag">Liver</span><span class="tag">Kidney</span><span class="tag">Gallbladder</span><span class="tag">Pancreas</span>
+          </div>
+        </div>
+        <div style="background:#FFF8F8;border-radius:8px;padding:8px 12px;display:flex;align-items:center;gap:7px;margin:12px 0">
+          <i class="ti ti-home" style="color:var(--ecg-red);font-size:14px"></i>
+          <span style="font-size:12px;color:var(--ecg-red);font-weight:500;font-family:var(--font-display)">Centre visit · Report same day</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:14px">
+          <div>
+            <span style="text-decoration:line-through;font-size:12px;color:var(--gray-400)">₹800</span>
+            <span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--ecg-red);margin-left:5px">₹599</span>
+            <span class="badge" style="background:#FFF0F0;color:var(--ecg-red);font-size:10px;margin-left:6px">25% off</span>
+          </div>
+          <button class="btn btn-sm" style="background:var(--ecg-red);color:#fff;border:none"><i class="ti ti-calendar-plus" style="font-size:13px"></i>Book</button>
+        </div>
+      </div>
+
+      <div style="background:#fff;border:1px solid #FECACA;border-radius:18px;padding:22px;transition:all .2s" onmouseenter="this.style.boxShadow='0 8px 24px rgba(192,57,43,.12)';this.style.transform='translateY(-2px)'" onmouseleave="this.style.boxShadow='none';this.style.transform='none'">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px">
+          <div>
+            <div style="font-size:16px;font-weight:700;color:var(--gray-900);font-family:var(--font-display);margin-bottom:3px">Chest X-Ray (PA View)</div>
+            <div style="font-size:12px;color:var(--gray-400)">Digital · 5 min</div>
+          </div>
+          <span class="badge" style="background:#DCFCE7;color:#166534;font-size:11px">Quick</span>
+        </div>
+        <div style="margin:12px 0">
+          <div style="font-size:11px;font-weight:600;color:var(--gray-400);text-transform:uppercase;letter-spacing:.06em;margin-bottom:6px;font-family:var(--font-display)">Detects</div>
+          <div style="display:flex;flex-wrap:wrap;gap:5px">
+            <span class="tag">Pneumonia</span><span class="tag">TB</span><span class="tag">Fractures</span>
+          </div>
+        </div>
+        <div style="background:#FFF8F8;border-radius:8px;padding:8px 12px;display:flex;align-items:center;gap:7px;margin:12px 0">
+          <i class="ti ti-clock" style="color:var(--ecg-red);font-size:14px"></i>
+          <span style="font-size:12px;color:var(--ecg-red);font-weight:500;font-family:var(--font-display)">Report ready in 2 hours</span>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:14px">
+          <div>
+            <span style="text-decoration:line-through;font-size:12px;color:var(--gray-400)">₹450</span>
+            <span style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--ecg-red);margin-left:5px">₹299</span>
+          </div>
+          <button class="btn btn-sm" style="background:var(--ecg-red);color:#fff;border:none"><i class="ti ti-calendar-plus" style="font-size:13px"></i>Book</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════
      HOW IT WORKS
 ══════════════════════════════════════════════ -->
 <section class="section how-section" id="how">
   <div class="container">
     <div style="text-align:center;margin-bottom:48px">
       <p class="section-label" style="text-align:center">Simple &amp; Fast</p>
-      <h2 class="section-title" style="text-align:center;margin-bottom:12px">How Cipca Health Works</h2>
-      <p class="section-sub" style="margin:0 auto;text-align:center">Get healthcare in 3 simple steps — no queues, no hassle.</p>
+      <h2 class="section-title" style="text-align:center;margin-bottom:12px">How CIPACA Works</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center">Emergency care, consultations, scans, and medicines — all in 3 simple steps.</p>
     </div>
     <div class="how-grid">
       <div class="how-step">
@@ -1046,7 +1211,7 @@ footer{background:var(--gray-900);padding:64px 0 32px}
       <div class="test-card">
         <div class="test-service"><span class="badge badge-purple"><i class="ti ti-pill" style="font-size:11px"></i>Medicines</span></div>
         <div class="test-quote">"</div>
-        <p class="test-text">My elderly mother's chronic medications were delivered in 90 minutes, at 20% less than the local pharmacy. Cipca Health has become our go-to for everything.</p>
+        <p class="test-text">My elderly mother's chronic medications were delivered in 90 minutes, at 20% less than the local pharmacy. CIPACA has become our go-to for everything.</p>
         <div style="display:flex;gap:2px;margin-bottom:14px">
           <i class="ti ti-star-filled" style="color:var(--amber-500);font-size:14px"></i>
           <i class="ti ti-star-filled" style="color:var(--amber-500);font-size:14px"></i>
@@ -1078,7 +1243,7 @@ footer{background:var(--gray-900);padding:64px 0 32px}
           <i class="ti ti-device-mobile" style="font-size:13px"></i>Available on iOS & Android
         </span>
         <h2>Take Your Health<br>Everywhere You Go</h2>
-        <p>Download the Cipca Health app and get instant access to doctors, lab results, and your complete health history — anytime, anywhere.</p>
+        <p>Download the CIPACA app for instant emergency alerts, doctor consultations, lab results, radiology reports, and your complete health history — anytime, anywhere.</p>
       </div>
       <div class="cta-banner-btns">
         <div class="app-store-btn">
@@ -1111,9 +1276,9 @@ footer{background:var(--gray-900);padding:64px 0 32px}
           <div class="footer-brand-mark">
             <i class="ti ti-heart-plus" style="color:#fff;font-size:16px"></i>
           </div>
-          <span class="footer-brand-text">Cipca<span style="color:var(--blue-400)">Health</span></span>
+          <span class="footer-brand-text" style="font-family:var(--font-display);letter-spacing:.02em">CIPACA</span>
         </div>
-        <p class="footer-desc">India's most trusted healthcare platform for doctor consultations, lab tests, and medicine delivery.</p>
+        <p class="footer-desc">Saving lives across India with 24x7 Emergency &amp; ICU care, specialist consultations, NABL labs, radiology, and medicine delivery.</p>
         <div class="footer-socials">
           <div class="footer-social"><i class="ti ti-brand-twitter"></i></div>
           <div class="footer-social"><i class="ti ti-brand-facebook"></i></div>
@@ -1128,6 +1293,7 @@ footer{background:var(--gray-900);padding:64px 0 32px}
           <li><a href="#">Video Consultation</a></li>
           <li><a href="#">Book Lab Tests</a></li>
           <li><a href="#">Order Medicines</a></li>
+          <li><a href="#">Radiology &amp; Imaging</a></li>
           <li><a href="#">Health Records</a></li>
         </ul>
       </div>
@@ -1153,11 +1319,11 @@ footer{background:var(--gray-900);padding:64px 0 32px}
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Cipca Health Technologies Pvt. Ltd. All rights reserved.</p>
+      <p>© 2025 CIPACA Healthcare Pvt. Ltd. All rights reserved. · Saving Lives</p>
       <div class="footer-badges">
         <div class="footer-badge"><i class="ti ti-certificate"></i>NABL Certified</div>
         <div class="footer-badge"><i class="ti ti-shield-check"></i>ISO 27001</div>
-        <div class="footer-badge"><i class="ti ti-lock"></i>HIPAA Compliant</div>
+        <div class="footer-badge"><i class="ti ti-radioactive"></i>AERB Certified</div>
       </div>
     </div>
   </div>
